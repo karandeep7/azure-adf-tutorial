@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Transactions migration",
 	"properties": {
 		"description": "Copy from Blob to SQL DB",
 		"activities": [
@@ -89,7 +89,17 @@
 				"inputs": [
 					{
 						"referenceName": "transactions",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"date": {
+								"value": "@pipeline().parameters.p_date",
+								"type": "Expression"
+							},
+							"sales": {
+								"value": "@pipeline().parameters.p_sales",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
