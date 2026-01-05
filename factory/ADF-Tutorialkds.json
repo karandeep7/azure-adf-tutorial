@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Tutorialkds",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a13d0ff-4a73-4133-b98e-0c4b301fa19c",
+		"tenantId": "bf8d4654-2423-49fc-8eac-a6be7548a32c"
+	}
+}
